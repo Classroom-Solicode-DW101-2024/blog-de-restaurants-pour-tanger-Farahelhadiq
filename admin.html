@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Restaurant Management</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="styleadmin.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Restaurants <span>.</span></a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="#about">about</a>
+            <a href="#restaurants-list">Restaurants</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+        <div class="icons">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-star"></a>
+      <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div>
+            <input type="text" id="search-bar" placeholder="Search for a restaurant by name">
+            <button id="searchBtn" onclick="search()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search">
+             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+           </svg></button>
+           <button id="searchBtn" onclick="clair()"><i class="fa-solid fa-rotate-left"></i></button>
+        </div>
+        </div>
+    </section>
+    <div class="container">
+        <h1>Restaurant Admin Panel</h1>
+
+        <div class="form-container">
+            <h2 id="form-title">Add New Restaurant</h2>
+            <form id="restaurant-form">
+                <input type="text" id="nom" placeholder="Restaurant Name" required><br>
+                <input type="text" id="adresse" placeholder="Address"><br>
+                <input type="text" id="telephone" placeholder="Phone Number"><br>
+                <input type="email" id="email" placeholder="Email"><br>
+                <input type="text" id="type_de_cuisine" placeholder="Cuisine Type"><br>
+                <input type="number" step="0.1" id="note_moyenne" placeholder="Average Rating"><br>
+                <input type="url" id="site_web" placeholder="Website URL"><br>
+                <input type="url" id="photo" placeholder="Image URL"><br>
+                <button type="submit" id="submit-button">Add Restaurant</button>
+            </form>
+        </div>
+
+        
+        <div class="restaurants-list" id="restaurants-list">
+          
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="géneralfooter">
+          <div class="footer-about">
+            <h2 id="about">About Us</h2>
+            <p>
+              We are a passionate team dedicated to providing quality content and services.
+              Our mission is to make a positive impact through innovation and collaboration.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#restaurants-list">restaurants</a></li>
+              <li><a href="admin.html">Admin</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Your Company. All Rights Reserved.</p>
+        </div>
+      </footer>
+    <script src="scriptadmin.js"></script>
+</body>
+</html>

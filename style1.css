@@ -1,0 +1,85 @@
+.restaurant-card {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.restaurant-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.restaurant-name {
+    font-size: 28px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.restaurant-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.restaurant-info div {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.restaurant-info i {
+    margin-right: 8px;
+}
+
+.restaurant-description p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.restaurant-extra-photos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.extra-photo {
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.restaurant-reviews {
+    margin-top: 20px;
+}
+
+.restaurant-reviews h3 {
+    font-size: 20px;
+    color: #444;
+}
+
+.restaurant-website {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.restaurant-website:hover {
+    text-decoration: underline;
+}
+
+.restaurant-phone, .restaurant-rating, .restaurant-address, .restaurant-cuisine {
+    font-size: 14px;
+    color: #777;
+}
+
+.restaurant-rating {
+    color: #f39c12;
+}
